@@ -15,7 +15,6 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     protected void initData(Bundle extras) {
-
     }
 
     @Override
