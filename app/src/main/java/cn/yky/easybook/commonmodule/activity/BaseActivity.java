@@ -3,6 +3,7 @@ package cn.yky.easybook.commonmodule.activity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -21,6 +22,7 @@ import java.lang.reflect.Method;
 import butterknife.ButterKnife;
 import cn.yky.easybook.R;
 import cn.yky.easybook.commonmodule.utils.AppStackUtil;
+import cn.yky.easybook.commonmodule.utils.StatusBarCompatUtils;
 import cn.yky.easybook.commonmodule.utils.T;
 import cn.yky.easybook.commonmodule.views.IosProgressDialog;
 import cn.yky.easybook.guidemodule.activity.SplashActivity;
@@ -68,6 +70,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     private void setStatusBarTextColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             this.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        } else {
+            StatusBarCompatUtils.setStatusBarColor(this, Color.BLACK);
         }
         FlymeSetStatusBarLightMode(this.getWindow(), true);
         MIUISetStatusBarLightMode(this.getWindow(), true);
