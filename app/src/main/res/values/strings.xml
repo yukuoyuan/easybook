@@ -5,4 +5,11 @@
     <string name="tab_bar_write_article">write</string>
     <string name="tab_bar_msg">message</string>
     <string name="tab_bar_mine">mine</string>
+    <string name="comment">评论</string>
+    <string name="message">简信</string>
+    <string name="ask">投稿请求</string>
+    <string name="likeandstar">喜欢和赞</string>
+    <string name="follow">关注</string>
+    <string name="appreciate">赞赏</string>
+    <string name="othertip">其他提醒</string>
 </resources>

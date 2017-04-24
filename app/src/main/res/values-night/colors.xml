@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#212a2f</color>
     <color name="colorAccent">#212a2f</color>
     <color name="text_color">#A2A2A2</color>
-    <color name="tabbar_text_color">#A2A2A2</color>
+    <color name="c_757575">#A2A2A2</color>
+    <color name="c_EAEAEA">#000000</color>
+    <color name="c_F1F0F1">#232224</color>
 </resources>
