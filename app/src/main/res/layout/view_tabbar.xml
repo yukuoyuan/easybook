@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/c_FFFEFF"
     android:orientation="horizontal">
 
     <LinearLayout
+        android:id="@+id/ll_tab_bar_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -12,6 +14,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tv_tab_bar_home"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/bg_tabbar_home"
@@ -25,53 +28,69 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ll_tab_bar_find"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
+            android:id="@+id/tv_tab_bar_find"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tabbar_find"
+            android:enabled="false" />
+
 
         <TextView
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_find"
             android:textColor="@color/c_757575" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ll_tab_bar_write_article"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
+
+        <TextView
+            android:id="@+id/tv_tab_bar_write_article"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tabbar_msg"
+            android:enabled="false" />
+
 
         <TextView
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_write_article"
             android:textColor="@color/c_757575" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ll_tab_bar_msg"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
+            android:id="@+id/tv_tab_bar_msg"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tabbar_msg"
+            android:enabled="false" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,19 +100,23 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ll_tab_bar_mine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
+            android:id="@+id/tv_tab_bar_mine"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tabbar_mine"
+            android:enabled="false" />
+
 
         <TextView
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_mine"
             android:textColor="@color/c_757575" />

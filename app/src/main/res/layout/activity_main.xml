@@ -7,6 +7,11 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
+    <cn.yky.easybook.mainmodule.view.TabBar
+        android:id="@+id/tab_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 </LinearLayout>
