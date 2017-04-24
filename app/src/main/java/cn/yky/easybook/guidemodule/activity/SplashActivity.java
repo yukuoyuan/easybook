@@ -1,6 +1,5 @@
 package cn.yky.easybook.guidemodule.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -13,6 +12,7 @@ import cn.yky.easybook.R;
 import cn.yky.easybook.commonmodule.activity.BaseActivity;
 import cn.yky.easybook.guidemodule.presenter.ISplashView;
 import cn.yky.easybook.guidemodule.presenter.SplashPresenter;
+import cn.yky.easybook.usermodule.activity.LoginAndRegistActivity;
 
 /**
  * 这是一个过度界面
@@ -67,14 +67,14 @@ public class SplashActivity extends BaseActivity implements ISplashView {
 
     @Override
     public void startGuideActivity() {
-        Intent intent = new Intent(this, GuideActivity.class);
-        startActivity(intent);
+        intent2Activity(GuideActivity.class);
         finish();
     }
 
     @Override
     public void startLoginAndRegistActivity() {
-
+        intent2Activity(LoginAndRegistActivity.class);
+        finish();
     }
 
     @Override

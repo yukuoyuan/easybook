@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">easybook</string>
+    <string name="tab_bar_home">home</string>
+    <string name="tab_bar_find">find</string>
+    <string name="tab_bar_write_article">write</string>
+    <string name="tab_bar_msg">message</string>
+    <string name="tab_bar_mine">mine</string>
 </resources>
