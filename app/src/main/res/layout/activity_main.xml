@@ -10,8 +10,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c_EAEAEA" />
+
     <cn.yky.easybook.mainmodule.view.TabBar
         android:id="@+id/tab_main"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="49dp" />
 </LinearLayout>

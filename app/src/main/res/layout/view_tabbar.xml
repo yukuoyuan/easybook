@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="6dp">
 
         <TextView
             android:id="@+id/tv_tab_bar_home"
@@ -24,7 +25,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_home"
-            android:textColor="@color/c_757575" />
+            android:textColor="@color/tabbar_text_color"
+            android:textSize="9sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -33,7 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="6dp">
 
         <TextView
             android:id="@+id/tv_tab_bar_find"
@@ -47,24 +50,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_find"
-            android:textColor="@color/c_757575" />
+            android:textColor="@color/tabbar_text_color"
+            android:textSize="9sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_tab_bar_write_article"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="6dp">
 
 
         <TextView
             android:id="@+id/tv_tab_bar_write_article"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_tabbar_msg"
+            android:background="@drawable/bg_tabbar_write"
             android:enabled="false" />
 
 
@@ -72,17 +76,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_write_article"
-            android:textColor="@color/c_757575" />
+            android:textColor="@color/tabbar_text_color"
+            android:textSize="9sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_tab_bar_msg"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="7dp">
 
         <TextView
             android:id="@+id/tv_tab_bar_msg"
@@ -96,7 +101,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_msg"
-            android:textColor="@color/c_757575" />
+            android:textColor="@color/tabbar_text_color"
+            android:textSize="9sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -105,7 +111,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="6dp">
 
         <TextView
             android:id="@+id/tv_tab_bar_mine"
@@ -119,6 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tab_bar_mine"
-            android:textColor="@color/c_757575" />
+            android:textColor="@color/tabbar_text_color"
+            android:textSize="9sp" />
     </LinearLayout>
 </LinearLayout>

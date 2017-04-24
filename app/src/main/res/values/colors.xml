@@ -6,4 +6,7 @@
     <color name="c_70000000">#70000000</color>
     <color name="c_757575">#757575</color>
     <color name="c_FFFEFF">#FFFEFF</color>
+    <color name="c_EAEAEA">#EAEAEA</color>
+    <color name="text_color">#000000</color>
+    <color name="tabbar_text_color">#757575</color>
 </resources>

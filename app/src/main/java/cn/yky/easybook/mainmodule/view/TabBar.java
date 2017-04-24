@@ -134,7 +134,7 @@ public class TabBar extends LinearLayout implements View.OnClickListener {
     /**
      * 设置按钮的选中状态
      */
-    public void setCheckedListener(int position) {
+    private void setCheckedListener(int position) {
         if (onTabCheckListener != null) {
             onTabCheckListener.onTabChecked(position);
         }
@@ -156,7 +156,7 @@ public class TabBar extends LinearLayout implements View.OnClickListener {
      *
      * @param tabbatPosition 按钮的位置
      */
-    private void setTabBarEnabled(int tabbatPosition) {
+    public void setTabBarEnabled(int tabbatPosition) {
         clearAllStatus();
         switch (tabbatPosition) {
             case 0:
