@@ -3,6 +3,7 @@ package cn.yky.easybook.usermodule.fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -13,9 +14,11 @@ import com.bumptech.glide.Glide;
 
 import butterknife.Bind;
 import butterknife.OnClick;
+import cn.yky.easybook.EasyBookApplication;
 import cn.yky.easybook.R;
 import cn.yky.easybook.commonmodule.fragment.BaseFragment;
 import cn.yky.easybook.commonmodule.glide.GlideCircleTransform;
+import cn.yky.easybook.commonmodule.manager.UserManager;
 
 /**
  * Created by yukuoyuan on 2017/4/25.
@@ -134,8 +137,24 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
-
+            if (UserManager.isNight()) {
+                return;
+            }
+            UserManager.setisNight(true);
+            EasyBookApplication.getMainHandler().post(new Runnable() {
+                @Override
+                public void run() {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    getActivity().recreate();
+                }
+            });
         } else {
+            if (!UserManager.isNight()) {
+                return;
+            }
+            UserManager.setisNight(false);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            getActivity().recreate();
         }
     }
 }

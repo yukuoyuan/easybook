@@ -29,4 +29,8 @@ public class Constant {
      * 用户昵称
      */
     public static String USER_NICKNAME = "USER_NICKNAME";
+    /**
+     * 是否是夜景模式
+     */
+    public static String ISNIGHT = "ISNIGHT";
 }

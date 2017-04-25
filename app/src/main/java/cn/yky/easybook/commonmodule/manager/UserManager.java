@@ -68,4 +68,22 @@ public class UserManager {
         return SPUtil.getBoolean(EasyBookApplication.getInstance(), Constant.ISFIRST, false);
     }
 
+    /**
+     * 是否是夜景模式
+     *
+     * @return
+     */
+    public static boolean isNight() {
+        return SPUtil.getBoolean(EasyBookApplication.getInstance(), Constant.ISNIGHT, false);
+
+    }
+
+    /**
+     * 设置是否是夜景模式
+     *
+     * @param isNight
+     */
+    public static void setisNight(boolean isNight) {
+        SPUtil.putBoolean(EasyBookApplication.getInstance(), Constant.ISNIGHT, isNight);
+    }
 }
