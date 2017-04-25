@@ -26,4 +26,9 @@
     <string name="topic_article">我的专题</string>
     <string name="book_article">我的文集</string>
     <string name="mine_wallet">我的钱包</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="browse_record">浏览记录</string>
+    <string name="to_app_score">给简书评分</string>
+    <string name="share_app">分享简书</string>
+    <string name="feed_back">意见反馈</string>
 </resources>

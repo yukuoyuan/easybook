@@ -43,6 +43,7 @@ public class MainActivity extends BaseActivity {
         fragments.add(new MineFragment());
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), fragments);
         vpMain.setAdapter(pagerAdapter);
+        vpMain.setOffscreenPageLimit(4);
         vpMain.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {

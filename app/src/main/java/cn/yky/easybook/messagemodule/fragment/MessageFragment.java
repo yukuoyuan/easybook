@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.TextView;
 
@@ -67,12 +66,10 @@ public class MessageFragment extends BaseFragment implements SwipeRefreshLayout.
                 break;
 
             case R.id.ll_msg_comment:
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                getActivity().recreate();
+
                 break;
             case R.id.ll_msg_message:
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                getActivity().recreate();
+
                 break;
             case R.id.ll_msg_ask:
                 break;
