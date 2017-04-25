@@ -14,35 +14,24 @@
         android:layout_height="49dp"
         android:gravity="center_vertical">
 
-        <TextView
-            android:id="@+id/tv_toolbar_title"
+        <ImageView
+            android:id="@+id/iv_toolbar_back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/icon_toolbar_back" />
+
+        <TextView
+            android:id="@+id/tv_toolbar__back_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_toolbar_back"
             android:gravity="center_vertical"
             android:text="@string/tab_bar_find"
             android:textColor="@color/text_color"
             android:textSize="16sp" />
 
-        <ImageView
-            android:id="@+id/iv_toolbar_right_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
-            android:layout_toLeftOf="@+id/iv_toolbar_right"
-            android:background="@drawable/ic_msg_settings"
-            android:padding="6dp" />
-
-        <ImageView
-            android:id="@+id/iv_toolbar_right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/icon_search"
-            android:padding="6dp" />
     </RelativeLayout>
 
     <View
