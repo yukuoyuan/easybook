@@ -1,7 +1,8 @@
 package cn.yky.easybook.usermodule.fragment;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -53,6 +54,7 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
     protected void initToolbar() {
         tvToolbarTitle.setText(R.string.tab_bar_mine);
         Glide.with(getActivity()).load(R.drawable.default_avatar).transform(new GlideCircleTransform(getActivity())).into(ivMineAvarar);
+        ivToolbarRightFirst.setBackgroundResource(R.drawable.icon_settings);
     }
 
 
@@ -80,16 +82,51 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
             case R.id.ll_mine_wallet:
                 break;
             case R.id.ll_mine_browse_record:
+//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+//                getActivity().recreate();
+//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+//                getActivity().recreate();
                 break;
             case R.id.ll_mine_share_app:
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "快来下载高仿的自定义简书吧! https://github.com/yukuoyuan/easybook");
+                shareIntent.setType("text/plain");
+                /**
+                 * 分享单张图片
+                 */
+//                shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri);
+//                shareIntent.setType("image/*");
+                //设置分享列表的标题，并且每次都显示分享列表
+                startActivity(Intent.createChooser(shareIntent, "分享到"));
+                /**
+                 * 分享多张图片
+                 */
+//                ArrayList<uri> uriList = new ArrayList<>();
+//
+//                String path = Environment.getExternalStorageDirectory() + File.separator;
+//                uriList.add(Uri.fromFile(new File(path+"australia_1.jpg")));
+//                uriList.add(Uri.fromFile(new File(path+"australia_2.jpg")));
+//                uriList.add(Uri.fromFile(new File(path+"australia_3.jpg")));
+//
+//                Intent shareIntent = new Intent();
+//                shareIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
+//                shareIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uriList);
+//                shareIntent.setType("image/*");
+//                startActivity(Intent.createChooser(shareIntent, "分享到"));
                 break;
             case R.id.ll_mine_feed_back:
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                getActivity().recreate();
+
                 break;
             case R.id.ll_mine_to_app_score:
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                getActivity().recreate();
+                /**
+                 * 给简书评分
+                 */
+                Uri uri = Uri.parse("market://details?id=" + "com.jianshu.haruki");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+
                 break;
         }
     }
