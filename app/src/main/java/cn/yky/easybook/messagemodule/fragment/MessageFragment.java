@@ -29,6 +29,7 @@ public class MessageFragment extends BaseFragment implements SwipeRefreshLayout.
 
     @Override
     public void initdata(Bundle arguments) {
+        srlMsg.setColorSchemeColors(getActivity().getResources().getColor(R.color.c_FEC3C0));
         srlMsg.setOnRefreshListener(this);
     }
 

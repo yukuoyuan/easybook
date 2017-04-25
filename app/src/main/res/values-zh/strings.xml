@@ -19,4 +19,11 @@
     <string name="push_project">推送项目</string>
     <string name="shock_tip">震动提示</string>
     <string name="select_push">精选推送</string>
+    <string name="public_article">公开文章</string>
+    <string name="private_article">私密文章</string>
+    <string name="mark_article">收藏的文章</string>
+    <string name="like_article">喜欢的文章</string>
+    <string name="topic_article">我的专题</string>
+    <string name="book_article">我的文集</string>
+    <string name="mine_wallet">我的钱包</string>
 </resources>

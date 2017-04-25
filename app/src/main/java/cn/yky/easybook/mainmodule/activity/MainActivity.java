@@ -16,6 +16,7 @@ import cn.yky.easybook.guidemodule.fragment.SecondGuideFragment;
 import cn.yky.easybook.guidemodule.fragment.ThirdGuideFragment;
 import cn.yky.easybook.mainmodule.view.TabBar;
 import cn.yky.easybook.messagemodule.fragment.MessageFragment;
+import cn.yky.easybook.usermodule.fragment.MineFragment;
 
 /**
  * Created by yukuoyuan on 2017/4/24.
@@ -39,6 +40,7 @@ public class MainActivity extends BaseActivity {
         fragments.add(new SecondGuideFragment());
         fragments.add(new ThirdGuideFragment());
         fragments.add(new MessageFragment());
+        fragments.add(new MineFragment());
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), fragments);
         vpMain.setAdapter(pagerAdapter);
         vpMain.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
