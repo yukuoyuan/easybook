@@ -1,8 +1,8 @@
 package cn.yky.easybook.messagemodule.activity;
 
 import android.os.Bundle;
+import android.support.v7.widget.SwitchCompat;
 import android.view.View;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -17,7 +17,7 @@ import cn.yky.easybook.commonmodule.activity.BaseActivity;
 
 public class NotificationSettingActivity extends BaseActivity {
     @Bind(R.id.swt_nt_setting_disturb)
-    Switch swtNtSettingDisturb;
+    SwitchCompat swtNtSettingDisturb;
     @Bind(R.id.tv_toolbar_back_title)
     TextView tvToolbarBackTitle;
 
