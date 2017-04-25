@@ -32,6 +32,17 @@
             android:textColor="@color/text_color"
             android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/tv_toolbar_back_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="@color/c_FEC3C0"
+            android:textSize="14sp"
+            android:visibility="gone" />
     </RelativeLayout>
 
     <View

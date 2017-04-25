@@ -19,6 +19,7 @@ import cn.yky.easybook.R;
 import cn.yky.easybook.commonmodule.fragment.BaseFragment;
 import cn.yky.easybook.commonmodule.glide.GlideCircleTransform;
 import cn.yky.easybook.commonmodule.manager.UserManager;
+import cn.yky.easybook.usermodule.activity.FeedBackActivity;
 
 /**
  * Created by yukuoyuan on 2017/4/25.
@@ -37,6 +38,7 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
     TextView ivMineName;
     @Bind(R.id.sc_mine_is_night)
     SwitchCompat scMineIsNight;
+    private Intent intent;
 
     @Override
     public void initdata(Bundle arguments) {
@@ -85,10 +87,6 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
             case R.id.ll_mine_wallet:
                 break;
             case R.id.ll_mine_browse_record:
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//                getActivity().recreate();
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//                getActivity().recreate();
                 break;
             case R.id.ll_mine_share_app:
                 Intent shareIntent = new Intent();
@@ -119,7 +117,11 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
 //                startActivity(Intent.createChooser(shareIntent, "分享到"));
                 break;
             case R.id.ll_mine_feed_back:
-
+                /**
+                 * 跳转意见反馈的界面
+                 */
+                intent = new Intent(getActivity(), FeedBackActivity.class);
+                startActivity(intent);
                 break;
             case R.id.ll_mine_to_app_score:
                 /**
@@ -129,7 +131,6 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-
                 break;
         }
     }

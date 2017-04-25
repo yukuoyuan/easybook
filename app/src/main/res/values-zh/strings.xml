@@ -31,4 +31,6 @@
     <string name="to_app_score">给简书评分</string>
     <string name="share_app">分享简书</string>
     <string name="feed_back">意见反馈</string>
+    <string name="feed_back_tip">写下您的需求和建议</string>
+    <string name="feed_back_tip2">联系方式(微信\'QQ等)</string>
 </resources>
