@@ -23,7 +23,7 @@
             android:src="@drawable/icon_toolbar_back" />
 
         <TextView
-            android:id="@+id/tv_toolbar__back_title"
+            android:id="@+id/tv_toolbar_back_title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/iv_toolbar_back"

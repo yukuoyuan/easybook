@@ -1,7 +1,12 @@
 package cn.yky.easybook.messagemodule.activity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Switch;
+import android.widget.TextView;
 
+import butterknife.Bind;
+import butterknife.OnClick;
 import cn.yky.easybook.R;
 import cn.yky.easybook.commonmodule.activity.BaseActivity;
 
@@ -11,6 +16,11 @@ import cn.yky.easybook.commonmodule.activity.BaseActivity;
  */
 
 public class NotificationSettingActivity extends BaseActivity {
+    @Bind(R.id.swt_nt_setting_disturb)
+    Switch swtNtSettingDisturb;
+    @Bind(R.id.tv_toolbar_back_title)
+    TextView tvToolbarBackTitle;
+
     @Override
     protected void bindPresenter() {
 
@@ -27,6 +37,19 @@ public class NotificationSettingActivity extends BaseActivity {
 
     @Override
     protected void initToolbar() {
+        tvToolbarBackTitle.setText("推送通知");
 
     }
+
+    @OnClick({R.id.iv_toolbar_back})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.iv_toolbar_back:
+                onBackPressed();
+                break;
+
+        }
+    }
+
+
 }
