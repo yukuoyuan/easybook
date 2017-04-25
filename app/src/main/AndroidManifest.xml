@@ -32,6 +32,10 @@
         <activity
             android:name=".mainmodule.activity.MainActivity"
             android:screenOrientation="portrait" />
+        <!--推送通知设置的界面-->
+        <activity
+            android:name=".messagemodule.activity.NotificationSettingActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
