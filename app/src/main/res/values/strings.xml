@@ -33,4 +33,6 @@
     <string name="feed_back">意见反馈</string>
     <string name="feed_back_tip">写下您的需求和建议</string>
     <string name="feed_back_tip2">联系方式(微信\'QQ等)</string>
+    <string name="recharge">充值</string>
+    <string name="look_transaction_record">查看交易记录</string>
 </resources>

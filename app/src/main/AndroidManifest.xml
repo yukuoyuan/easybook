@@ -35,13 +35,16 @@
         <!--推送通知设置的界面-->
         <activity
             android:name=".messagemodule.activity.NotificationSettingActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+            android:screenOrientation="portrait" />
         <!--这是一个意见反馈的界面-->
         <activity
             android:name=".usermodule.activity.FeedBackActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
+        <!--这是一个我的钱包界面-->
+        <activity
+            android:name=".usermodule.activity.MyWalletActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -20,6 +20,7 @@ import cn.yky.easybook.commonmodule.fragment.BaseFragment;
 import cn.yky.easybook.commonmodule.glide.GlideCircleTransform;
 import cn.yky.easybook.commonmodule.manager.UserManager;
 import cn.yky.easybook.usermodule.activity.FeedBackActivity;
+import cn.yky.easybook.usermodule.activity.MyWalletActivity;
 
 /**
  * Created by yukuoyuan on 2017/4/25.
@@ -85,6 +86,11 @@ public class MineFragment extends BaseFragment implements CompoundButton.OnCheck
             case R.id.ll_mine_article_book:
                 break;
             case R.id.ll_mine_wallet:
+                /**
+                 * 跳转我的钱包的界面
+                 */
+                intent = new Intent(getActivity(), MyWalletActivity.class);
+                startActivity(intent);
                 break;
             case R.id.ll_mine_browse_record:
                 break;

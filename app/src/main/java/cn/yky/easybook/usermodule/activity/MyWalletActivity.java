@@ -12,17 +12,19 @@ import cn.yky.easybook.commonmodule.activity.BaseActivity;
 
 /**
  * Created by yukuoyuan on 2017/4/25.
- * 这是一个意见反馈的界面
+ * 这是一个我的钱包的界面
  */
-public class FeedBackActivity extends BaseActivity {
+public class MyWalletActivity extends BaseActivity {
+    @Bind(R.id.v_toolbar_back)
+    View vToolbarBack;
     @Bind(R.id.iv_toolbar_back)
     ImageView ivToolbarBack;
     @Bind(R.id.tv_toolbar_back_title)
     TextView tvToolbarBackTitle;
     @Bind(R.id.tv_toolbar_back_right)
     TextView tvToolbarBackRight;
-    @Bind(R.id.v_toolbar_back)
-    View vToolbarBack;
+    @Bind(R.id.tv_mywallet_recharge)
+    TextView tvMywalletRecharge;
 
     @Override
     protected void bindPresenter() {
@@ -36,24 +38,21 @@ public class FeedBackActivity extends BaseActivity {
 
     @Override
     public int getContentLayout() {
-        return R.layout.activity_feedback;
+        return R.layout.activity_mywallet;
     }
 
     @Override
     protected void initToolbar() {
-        tvToolbarBackRight.setVisibility(View.VISIBLE);
-        tvToolbarBackTitle.setText(R.string.feed_back);
-        vToolbarBack.setVisibility(View.GONE);
+        tvToolbarBackTitle.setText("钱包");
     }
 
-    @OnClick({R.id.iv_toolbar_back, R.id.tv_toolbar_back_right})
+    @OnClick({R.id.iv_toolbar_back, R.id.tv_mywallet_recharge})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.iv_toolbar_back:
                 onBackPressed();
                 break;
-            case R.id.tv_toolbar_back_right:
-                onBackPressed();
+            case R.id.tv_mywallet_recharge:
                 break;
         }
     }
